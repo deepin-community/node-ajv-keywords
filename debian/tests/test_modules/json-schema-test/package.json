@@ -1,0 +1,78 @@
+{
+  "_from": "json-schema-test@^2.0.0",
+  "_id": "json-schema-test@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-/927eYRNlF+/2wLAWkRxgPdxarg=",
+  "_location": "/json-schema-test",
+  "_phantomChildren": {
+    "inflight": "1.0.6",
+    "inherits": "2.0.4",
+    "minimatch": "3.0.4",
+    "once": "1.4.0",
+    "path-is-absolute": "1.0.1"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "json-schema-test@^2.0.0",
+    "name": "json-schema-test",
+    "escapedName": "json-schema-test",
+    "rawSpec": "^2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/json-schema-test/-/json-schema-test-2.0.0.tgz",
+  "_shasum": "ffddbb79844d945fbfdb02c05a447180f7716ab8",
+  "_spec": "json-schema-test@^2.0.0",
+  "_where": "/home/xavier/dev/debian/src/pkg-js/packages/node-ajv-keywords",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MailOnline/json-schema-test/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "glob": "^5.0.10"
+  },
+  "deprecated": false,
+  "description": "Testing JSON schemas against sample data",
+  "devDependencies": {
+    "ajv": "^4.9.0",
+    "coveralls": "^2.11.15",
+    "mocha": "^3.2.0",
+    "nyc": "^10.0.0",
+    "pre-commit": "^1.1.3"
+  },
+  "homepage": "https://github.com/MailOnline/json-schema-test",
+  "keywords": [
+    "JSON",
+    "schema",
+    "test"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "json-schema-test",
+  "nyc": {
+    "exclude": [
+      "**/spec/**",
+      "node_modules"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MailOnline/json-schema-test.git"
+  },
+  "scripts": {
+    "test": "nyc npm run test-spec",
+    "test-fail": "mocha spec/*.fail.js -R spec | grep ' 0 passing' | grep -q '0'",
+    "test-pass": "mocha spec/*.pass.js -R spec",
+    "test-spec": "npm run test-pass && npm run test-fail"
+  },
+  "version": "2.0.0"
+}

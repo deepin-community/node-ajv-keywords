@@ -1,0 +1,64 @@
+node-ajv-keywords (3.5.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Declare compliance with policy 4.6.0
+
+ -- Yadd <yadd@debian.org>  Thu, 19 Aug 2021 11:26:58 +0200
+
+node-ajv-keywords (3.5.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs
+  * New upstream version 3.5.2
+  * Update copyright
+  * Use pkg-js-autopkgtest
+  * Enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 16 Oct 2020 20:15:00 +0200
+
+node-ajv-keywords (3.4.1-1) unstable; urgency=medium
+
+  * New upstream version 3.4.1
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 08 Aug 2019 06:19:03 +0000
+
+node-ajv-keywords (3.4.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Switch to pkg-js-tools auto install
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Aug 2019 08:43:25 +0000
+
+node-ajv-keywords (3.4.0-1) experimental; urgency=medium
+
+  * New upstream version 3.4.0 (Closes: #930559)
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Update description
+  * Update section to javascript
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 17 Jun 2019 21:28:22 +0530
+
+node-ajv-keywords (2.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #864146)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Jun 2017 17:38:05 +0530
