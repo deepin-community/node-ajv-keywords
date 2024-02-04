@@ -1,3 +1,43 @@
+node-ajv-keywords (5.1.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Thu, 14 Dec 2023 11:55:43 +0400
+
+node-ajv-keywords (5.1.0-3) experimental; urgency=medium
+
+  * Team upload
+  * Breaks: node-schema-utils (<< 4~)
+  * Declare compliance with policy 4.6.1
+  * Replace embedded require-from-string by test dependency to
+    node-require-from-string
+  * Fix build links (Closes: #1014303)
+
+ -- Yadd <yadd@debian.org>  Sun, 03 Jul 2022 21:41:20 +0200
+
+node-ajv-keywords (5.1.0-2) experimental; urgency=medium
+
+  * Team upload
+  * Fix build: move jest-diff to debian/nodejs/extcopies
+
+ -- Yadd <yadd@debian.org>  Mon, 06 Dec 2021 10:28:50 +0100
+
+node-ajv-keywords (5.1.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * New upstream version 5.1.0
+  * Embed @ajv-validator/config for build only
+  * Build with tsc
+  * Update test (jest)
+  * Build-dependencies:
+    * require node-ajv ≥ 8~
+    * require dh-sequence-nodejs ≥ 0.9.82 (due to @types/uuid format)
+    * add (many) build dependencies
+
+ -- Yadd <yadd@debian.org>  Wed, 24 Nov 2021 12:39:14 +0100
+
 node-ajv-keywords (3.5.2-2) unstable; urgency=medium
 
   * Team upload

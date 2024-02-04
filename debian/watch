@@ -1,5 +1,5 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-ajv-keywords-$1.tar.gz/ \
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-ajv-keywords-$1/ \
  https://github.com/epoberezkin/ajv-keywords/tags .*/archive/.*/v?([\d\.]+).tar.gz
