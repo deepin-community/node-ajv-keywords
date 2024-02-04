@@ -8,4 +8,4 @@
 	dh $@
 
 override_dh_auto_build:
-	node `nodepath ajv`/scripts/compile-dots.js `nodepath ajv`/lib keywords
+	tsc

@@ -1,0 +1,15 @@
+Description: fix tsconfig to import chai in test
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-11-24
+
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -2,6 +2,7 @@
+   "extends": "@ajv-validator/config",
+   "include": ["src"],
+   "compilerOptions": {
++    "esModuleInterop": true,
+     "outDir": "dist",
+     "allowJs": true
+   }

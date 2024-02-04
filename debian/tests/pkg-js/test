@@ -1,1 +1,1 @@
-mocha spec/*.spec.js
+jest --ci --preset ts-jest spec/*.ts --testPathIgnorePatterns spec/transform.spec.ts
